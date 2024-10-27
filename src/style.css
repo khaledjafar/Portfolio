@@ -1,0 +1,497 @@
+html,
+body,
+#root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  /* background-color: rgb(31, 31, 31); */
+  /* background-color: #ECDFCC; */
+  /* background-color: #D4BEE4; */
+  background: rgb(231,63,146);
+  background: linear-gradient(0deg, rgba(231,63,146,1) 0%, rgba(255,255,255,1) 50%, rgba(76,201,254,1) 100%);
+}
+
+.text > div{
+  font-weight: 600;
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  white-space: nowarp;
+  overflow: hidden;
+  border-radius: 30px;
+  user-select: none;
+}
+.homePage >div {
+  font-family: sans-serif;
+  font-weight: 600;
+  position: absolute;
+  background-color: white;
+  padding: 15px;
+  white-space: nowarp;
+  overflow: hidden;
+  border-radius: 30px;
+  user-select: none;
+}
+.divider {
+  width: 100px;
+  height: 100px ;
+  border: 2px solid orange;
+}
+
+
+
+/* Container */
+.container {
+  position: relative;
+  top: 0px;
+  width: 180vh;
+  max-width: 180vh;
+  min-width: auto;
+  height: 90vh;
+  background-color: transparent;
+  border-radius: 30px;
+}
+header {
+  background-color: transparent;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+.mt{
+  margin-top: 50px;
+}
+header h1 {
+  margin-bottom: 0.5rem;
+}
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../public/fonts/DynaPuff-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+nav ul {
+  width: auto;
+  font-family: 'Lexend', sans-serif;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+}
+
+nav ul li {
+ 
+  display: inline;
+  margin: 0 10px;
+}
+nav ul li:first-child {
+  margin-right: auto;
+}
+nav ul li a {
+  color: #c0c0c0;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+nav ul li a:hover {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+
+
+
+/* Homepage body */
+.row{
+  margin-top: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.Homepage-body{
+  position: absolute;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  width: 100%;
+  height: auto;
+  padding: 30px;
+  margin: 0;
+}
+
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('../public/fonts/Lexend-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+h1 {
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+
+@font-face {
+  font-family: 'LexendLight';
+  src: url('../public/fonts/Lexend-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.p-info{
+  font-family: 'LexendLight', sans-serif;
+  font-size: 1.5em;
+  color: #c0c0c0;
+}
+.big-circle {
+  display: flex;
+  justify-content: center; /* Center the circles */
+  position: relative; /* Position context for absolute elements */
+  margin-top: 100px;
+  border-top: 5px solid white;
+  border-radius: 100%;
+  width: 100vh;
+  height: 100vh;
+}
+
+.circle {
+  position: absolute; /* Remove from the flow to place them in a circle */
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  filter: drop-shadow(0px 0px 10px white);
+}
+.Avatar{
+  position: absolute;
+  top: 200px;
+  width: 20vh;
+  filter: drop-shadow(1px 3px 2px rgb(255, 255, 255,0.7)) /* First shadow */
+          drop-shadow(10px 3px 10px rgba(255, 255, 255,0.5 )) /* Third shadow */
+          drop-shadow(20px 3px 10px rgba(255, 255, 255, 0.2)) /* Third shadow */
+          drop-shadow(35px 3px 10px rgba(255, 255, 255, 0.1)); /* Third shadow */
+}
+
+
+
+
+
+/* page content  */
+.html-sections{
+text-decoration: none;
+list-style: none;
+}
+.html-sections .html-part1{
+  height:100vh;
+  background: transparent;
+}
+.html-sections .html-part2{
+  height:100vh;
+  width: 190vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.html-sections .html-part3{
+  height:100vh;
+  background: transparent;
+}
+.html-sections .html-part4{
+  position: relative;
+  bottom: -30vh;
+  height:100vh;
+  background: transparent;
+}
+.aboutme-div{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90vh;
+  height: 60vh;
+}
+.aboutme-title{
+  color: rgb(25, 25, 25);
+  font-family: 'Lexend', sans-serif;
+  font-size: 4em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.aboutme-text{
+  color: rgb(25, 25, 25);
+  font-family: 'LexendLight', sans-serif;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+
+/* Third Page */
+.html-part3 h1{
+  font-family: 'Lexend', sans-serif;
+  color: rgb(25, 25, 25);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.aboutMyResume{
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.leftResume{
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+.aboutmeul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+.aboutmeul li{
+  padding: 30px;
+}
+
+  .smooth-table {
+    margin:0px ;
+    margin-top: 60px;
+    width: 100%;
+    border-radius: 100%;
+    border-collapse: collapse;
+  }
+  .smooth-table tr:nth-child(odd) {
+    font-family: 'LexendLight', sans-serif;
+    background-color: rgba(84, 84, 84, 0.0);
+  }
+  .smooth-table tr:nth-child(even) {
+    font-family: 'LexendLight', sans-serif;
+    background-color: rgba(0, 0, 0, 0.0);
+  }
+  .smooth-table td {
+    padding: 30px;
+    font-size: 1rem;
+    color: #000;
+  }
+
+
+/* Footer */
+.card{
+  position: absolute;
+  top: 200px;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+svg{
+  border-radius:50px 50px 0% 0%;
+}
+.top-part{
+  position: relative;
+  top: -170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  border-radius: 50px 50px 0px 0px;
+}
+.wave{
+  width: 100%;
+  opacity: 0.4;
+  fill: url(#grad);
+  stroke: #1a001a00;
+  stroke-width: 0;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1{
+  user-select: none; /* remove selection  */
+  font-family:Georgia;
+  margin-bottom: 0px;
+}
+h4{
+  user-select: none; /* remove selection  */
+  margin-top: 5px;
+}
+.Platforms{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.end-card{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 10px;
+}
+.btn{
+  cursor: pointer;
+  user-select: none; /* remove selection  */
+  font-family: arial;
+  font-size: 16px;
+  color: white;
+  background-color: #e73f92;
+  width: 120px;
+  height: 40px;
+  border-radius: 18px;
+  border: 0px;
+}
+.btn2{
+  cursor: pointer;
+  user-select: none; /* remove selection  */
+  background-color: white;
+  font-family: arial;
+  font-size: 16px;
+  color: black;
+  width: 120px;
+  height: 40px;
+  border-radius: 18px;
+  border: 1px solid black;
+}
+.w0 {
+  animation:anim0 30s infinite forwards;
+}
+.w1 {
+  animation:anim1 30s infinite forwards;
+}
+.w2 {
+  animation:anim2 30s infinite forwards;
+}
+.w3 {
+  animation:anim3 30s infinite forwards;
+}
+@keyframes anim0{
+  0%{d:path("M0,64L48,85.3C96,107,192,149,288,192C384,235,480,277,576,266.7C672,256,768,192,864,186.7C960,181,1056,235,1152,218.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  50%{d:path("M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,181.3C672,160,768,160,864,144C960,128,1056,96,1152,96C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  100%{d:path("M0,64L48,85.3C96,107,192,149,288,192C384,235,480,277,576,266.7C672,256,768,192,864,186.7C960,181,1056,235,1152,218.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+}
+@keyframes anim1{
+  0%{d:path("M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,181.3C672,160,768,160,864,144C960,128,1056,96,1152,96C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  50%{d:path("M0,224L48,234.7C96,245,192,267,288,240C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,208C1248,192,1344,128,1392,96L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  100%{d:path("M0,128L48,154.7C96,181,192,235,288,240C384,245,480,203,576,181.3C672,160,768,160,864,144C960,128,1056,96,1152,96C1248,96,1344,128,1392,144L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+}
+@keyframes anim2{
+  0%{d:path("M0,224L48,234.7C96,245,192,267,288,240C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,208C1248,192,1344,128,1392,96L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  50%{d:path("M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,192C672,149,768,75,864,58.7C960,43,1056,85,1152,112C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  100%{d:path("M0,224L48,234.7C96,245,192,267,288,240C384,213,480,139,576,117.3C672,96,768,128,864,160C960,192,1056,224,1152,208C1248,192,1344,128,1392,96L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+}
+@keyframes anim3{
+  0%{d:path("M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,192C672,149,768,75,864,58.7C960,43,1056,85,1152,112C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  50%{d:path("M0,64L48,85.3C96,107,192,149,288,192C384,235,480,277,576,266.7C672,256,768,192,864,186.7C960,181,1056,235,1152,218.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+  100%{d:path("M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,192C672,149,768,75,864,58.7C960,43,1056,85,1152,112C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 1668px) {
+  .project {
+    width: 90vh;
+  }
+  .row{
+    margin-top: -10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutme-title{
+    font-family: 'Lexend', sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .aboutme-text{
+    font-family: 'LexendLight', sans-serif;
+    font-size: 1.8em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    line-height: 1.3;
+  }
+}
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.5rem;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  .project {
+    width: 90vh;
+  }
+  .about-section p, .contact-section p {
+    font-size: 0.9rem;
+  }
+}
