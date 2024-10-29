@@ -469,6 +469,13 @@ h4{
     padding: 0;
     line-height: 1.3;
   }
+  .smooth-table {
+    margin:0px ;
+    margin-top: 0px;
+    width: 100%;
+    border-radius: 100%;
+    border-collapse: collapse;
+  }
 }
 @media (max-width: 768px) {
 
