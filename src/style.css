@@ -221,7 +221,7 @@ list-style: none;
 }
 .html-sections .html-part4{
   position: relative;
-  bottom: -20vh;
+  bottom: 0vh;
   height:100vh;
   background: transparent;
 }
