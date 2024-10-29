@@ -208,7 +208,7 @@ list-style: none;
 }
 .html-sections .html-part2{
   height:100vh;
-  width: 190vh;
+  width: auto;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -232,7 +232,8 @@ list-style: none;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 90vh;
+  width: auto;
+  max-width: 90vh;
   height: 60vh;
 }
 .aboutme-title{
@@ -301,11 +302,11 @@ list-style: none;
     border-collapse: collapse;
   }
   .smooth-table tr:nth-child(odd) {
-    font-family: 'LexendLight', sans-serif;
+    font-family: 'Lexend', sans-serif;
     background-color: rgba(84, 84, 84, 0.0);
   }
   .smooth-table tr:nth-child(even) {
-    font-family: 'LexendLight', sans-serif;
+    font-family: 'Lexend', sans-serif;
     background-color: rgba(0, 0, 0, 0.0);
   }
   .smooth-table td {
@@ -433,7 +434,17 @@ h4{
   50%{d:path("M0,64L48,85.3C96,107,192,149,288,192C384,235,480,277,576,266.7C672,256,768,192,864,186.7C960,181,1056,235,1152,218.7C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
   100%{d:path("M0,64L48,96C96,128,192,192,288,218.7C384,245,480,235,576,192C672,149,768,75,864,58.7C960,43,1056,85,1152,112C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z");}
 }
-
+footer{
+  position: relative;
+  top: 80px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+footer p{
+  font-family: 'LexendLight', sans-serif;
+}
 
 
 
@@ -476,13 +487,79 @@ h4{
     border-radius: 100%;
     border-collapse: collapse;
   }
-}
-@media (max-width: 768px) {
-
 
 }
+@media (max-width: 1485px) {
+  header {
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    text-align: center;
+  }
+}
+@media (max-width: 765px) {
+  .p-info {
+    font-family: 'LexendLight', sans-serif;
+    font-size: 1em;
+    color: #c0c0c0;
+}
+.html-sections {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+.aboutme-text {
+  padding: 0px 60px ;
+  font-family: 'LexendLight', sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+  line-height: 1em;
+  margin: 0;
+  line-height: 1.3;
+}
+.html-part3 h1 {
+  font-size: 48px;
+  font-family: 'Lexend', sans-serif;
+  color: rgb(25, 25, 25);
+  text-align: center;
+  margin-bottom: 60px;
+}
+.leftResume {
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+  border-radius: 20%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: start;
+  align-items: start;
+  text-align: left;
+}
+}
 
-@media (max-width: 480px) {
+@media (max-width: 515px) {
+  h1 {
+    color: white;
+    font-family: 'Lexend', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+}
+  .p-info {
+    font-family: 'LexendLight', sans-serif;
+    font-size: 0.9em;
+    color: #c0c0c0;
+    padding: 0px 120px;
+}
+.aboutMyResume {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
   header h1 {
     display: block;
     margin: 10px 0;
@@ -501,4 +578,55 @@ h4{
   .about-section p, .contact-section p {
     font-size: 0.9rem;
   }
+}
+@media (max-width: 466px) {
+  .p-info {
+    width: 250px;
+    font-family: 'LexendLight', sans-serif;
+    font-size: 0.9em;
+    color: #c0c0c0;
+    padding: 0px 20px;
+}
+}
+@media (max-width: 321px) {
+  .html-sections .html-part2 {
+    height: 100vh;
+    width: 300px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .aboutme-title {
+    font-family: 'Lexend', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .aboutme-text {
+    padding: 0px 10px;
+    width: 300px;
+    font-family: 'LexendLight', sans-serif;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 1em;
+    margin: 0;
+    line-height: 1.3;
+}
+.html-sections .html-part3 {
+  height: 100vh;
+  width: 320px;
+  background: transparent;
+}
+.html-part3 h1 {
+  font-size: 1.9em;
+  font-family: 'Lexend', sans-serif;
+  color: rgb(25, 25, 25);
+  text-align: center;
+  margin-bottom: 10px;
+}
 }

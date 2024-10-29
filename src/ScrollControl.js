@@ -287,6 +287,9 @@ const ScrollControl = () => {
                                 <button class="btn2">Message</button>
                               </a>
                               </div>
+                              <footer>
+                                <p>© 2024 (Khaled jafar)</p>
+                              </footer>
                           </div>
                       </div>
                     </li>
