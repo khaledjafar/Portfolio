@@ -160,7 +160,7 @@ const ScrollControl = () => {
             {/* <Headphones scale={0.05} position={[0.3,0,1.4]} /> */}
 
            
-         
+{/*          
           <RedSquareParticles />
           <BlueSquareParticles />
           <CyanSquareParticles />
@@ -169,7 +169,31 @@ const ScrollControl = () => {
           <PinkSquareParticles />
           <PurpleSquareParticles />
           <WhiteSquareParticles />
-          <YellowSquareParticles /> 
+          <YellowSquareParticles />  */}
+
+        <Stars 
+        radius={40}
+        depth={50}
+          count={5000}
+          factor={4}
+          saturation={0}
+          fade
+          speed={3}
+          color="#68C2ED"
+        />
+        <Stars 
+        radius={140}
+        depth={100}
+          count={5000}
+          factor={4}
+          saturation={0}
+          fade
+          speed={5}
+          color="#68C2ED"
+        />
+
+
+
 
           <Laptop />
 
