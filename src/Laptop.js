@@ -78,7 +78,11 @@ export default function Laptop(props) {
                         <div className="row">
                             <div className="Homepage-body">
                                 
-                                <h1>Hi, I'm Khaled </h1>
+                                <h1 style={{
+                                filter: 'drop-shadow(2px 2px 6px rgba(220, 220, 220, 0.6))', 
+                                color: '#fff',
+                                 textAlign: 'center'
+                                }}>Hi, I'm Khaled </h1>
                                 
                                 <p className='p-info'>I'm a frontend developer, I like to craft solid and scalable frontend<br/> products  with great user experiences</p>
                                 <div className='big-circle'></div>

@@ -222,7 +222,7 @@ list-style: none;
 }
 .html-sections .html-part4{
   position: relative;
-  bottom: 0vh;
+  bottom:-20vh;
   height:100vh;
   background: transparent;
 }
@@ -353,7 +353,7 @@ svg{
   align-items: center;
 }
 h1{
-  filter: drop-shadow(1px 1px 2px rgba(3, 3, 3, 0.7)) ;
+  
   user-select: none; 
   font-family:Georgia;
   margin-bottom: 0px;
@@ -566,6 +566,12 @@ footer p{
     padding: 30px 30px;
     font-size: 1.5rem;
     color: #000;
+}
+.html-sections .html-part4{
+  position: relative;
+  bottom: 10vh;
+  height:100vh;
+  background: transparent;
 }
 }
 @media (max-width: 515px) {
