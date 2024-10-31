@@ -84,7 +84,7 @@ import WhiteSquareParticles from "./WhiteSquareParticles.js"
 import YellowSquareParticles from "./YellowSquareParticles.js"
 
 import Headphones from "./Headphones.jsx"
-
+import Phone from "./Phone.jsx";
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader';
 
 
@@ -136,7 +136,7 @@ const ScrollControl = () => {
       <PerspectiveCamera ref={CameraRef} makeDefault position={[0, 0, 2]} />
 
      
-      <ScrollControls pages={4} damping={0.4}>
+      <ScrollControls pages={5} damping={0.4}>
       
       <ScrollContent cameraRef={CameraRef} />
       
@@ -149,9 +149,9 @@ const ScrollControl = () => {
 
         <Book position={[0, -3.7, 3]} scale={3} rotation={[Math.PI / 2 ,0 , 0]} />
 
-        <Wall position={[0, -9, 1.2]} scale={1} />
+        {/* <Wall position={[0, -9, 1.2]} scale={1} /> */}
 
-
+        <Phone position={[-0.2, -8.85, 1.2]} scale={1}/>
 
         {/* <mesh ref={boxRef} position={[1, -0.5, 3]} scale={0.2}>
               <boxGeometry />
@@ -227,10 +227,10 @@ const ScrollControl = () => {
                     <li className="html-part2">  
                       <div className="aboutme-div">
                         <h1 className="aboutme-title" style={{
-  filter: 'drop-shadow(2px 2px 6px rgba(220, 220, 220, 0.6))', 
-  color: '#000',
-  textAlign: 'center'
-}}>About Me</h1>
+                          filter: 'drop-shadow(2px 2px 6px rgba(220, 220, 220, 0.6))', 
+                          color: '#000',
+                          textAlign: 'center'
+                        }}>About Me</h1>
                           <h1 className="aboutme-text">Hi, I'm Khaled Jafar, a passionate frontend developer with a love for
                             creating engaging and user-friendly web experiences.
                             I thrive on solving complex problems through clean, 
@@ -244,12 +244,13 @@ const ScrollControl = () => {
                     </li>
                     <li className="html-part3">
                     <h1 style={{
-  filter: 'drop-shadow(2px 2px 6px rgba(3, 3, 3, 0.6))', 
-  color: '#fff',
-  textAlign: 'center'
-}}>
-  About My Resume
-</h1>                      <div className="aboutMyResume">
+                      filter: 'drop-shadow(2px 2px 6px rgba(3, 3, 3, 0.6))', 
+                      color: '#fff',
+                      textAlign: 'center'
+                    }}>
+                      About My Resume
+                    </h1>                      
+                    <div className="aboutMyResume">
                         <div className="leftResume">
                           <div></div>
                           <div>
@@ -289,6 +290,7 @@ const ScrollControl = () => {
             
                       </div>
                     </li> 
+                    <li className="html-part4"></li>
                     <li className="html-part4">
                     <div class="card">
                          {/* <MyWaveSVG /> 
@@ -296,10 +298,10 @@ const ScrollControl = () => {
                       </div>*/}
                           <div class="card-body">
                             <h1 style={{
-  filter: 'drop-shadow(2px 2px 6px rgba(3, 3, 3, 0.6))', 
-  color: '#fff',
-  textAlign: 'center'
-}}>Contacts</h1>
+                              filter: 'drop-shadow(2px 2px 6px rgba(3, 3, 3, 0.6))', 
+                              color: '#fff',
+                              textAlign: 'center'
+                            }}>Contacts</h1>
                               <div class="Platforms">
 
                                 <a href="https://www.linkedin.com/in/khaled-jafar-abu-ijdea-a-547483274/" target="_blank" rel="noopener noreferrer">
