@@ -172,6 +172,8 @@ const ScrollControl = () => {
           <YellowSquareParticles /> 
 
           <Laptop />
+
+
           <Cloud position={[0, -2, 3]}
               width={100}
               opacity={3}
@@ -269,7 +271,11 @@ const ScrollControl = () => {
                           <div class="top-part">
                       </div>*/}
                           <div class="card-body">
-                            <h1>Contacts</h1>
+                            <h1 style={{
+  filter: 'drop-shadow(2px 2px 6px rgba(3, 3, 3, 0.6))', 
+  color: '#fff',
+  textAlign: 'center'
+}}>Contacts</h1>
                               <div class="Platforms">
 
                                 <a href="https://www.linkedin.com/in/khaled-jafar-abu-ijdea-a-547483274/" target="_blank" rel="noopener noreferrer">
